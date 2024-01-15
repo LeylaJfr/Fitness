@@ -1,0 +1,199 @@
+:root{
+    --qirmizi: #fd634d;
+    --yasil: #a1c927;
+}
+header {
+    position: relative;
+    height: 100vh;
+    background: url('../img/headerbg.jpg') 56% 50% /cover;
+    text-align: center;
+    overflow: hidden;
+}
+nav, #title ,#line { 
+    position: absolute;
+    width: 100%;
+}
+nav {
+    padding: 40px 50px;
+}
+#menu li a {
+    font: .8em 'Avenir Next Rounded Std', sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+}
+#title { 
+    bottom: 17%;
+}
+#line {
+    background: #fd634d;
+    opacity: 30%;
+    height: 105px;
+    bottom: 0;
+    rotate:-2.34deg;
+    transform: translate(0, 40px);
+}
+h1 {
+    font: 2em 'Myriad Pro', sans-serif;
+    text-transform: uppercase;
+}
+h2 {
+    font: 2em 'Open Sans';
+    text-transform: uppercase;
+}
+h3 { 
+    font: 1.5em 'Open Sans', sans-serif;
+    padding: 1em 0;
+}
+h5 {
+    font: 1em 'Myriad Pro', sans-serif;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+h6 {
+    font: .9em 'Montserrat';
+    text-transform: uppercase;
+}
+h1 span { color: var(--yasil) }
+h5 span { color: var(--qirmizi) }
+
+.bg-ag { background-color: #fff; }
+.bg-qirmizi { background-color: var(--qirmizi); }
+.bg-yasil { background-color: var(--yasil); }
+.txt-ag { color: #fff; }
+.txt-qirmizi { color: var(--qirmizi); }
+.txt-yasil { color: var(--yasil); }
+.vh50 { min-height: 50vh; }
+.artpadd { padding: 50px 10px }
+.acenter { text-align: center;}
+
+#art4 { padding: 60px 0}
+
+#fitnessfirst { background: url('../img/fitnessfirst.jpg') center/cover; }
+#yourbody { background: url('../img/yourbody.jpg') center/cover; }
+#lifestyle { background: url('../img/lifestyle.jpg') center/cover; }
+#summeroffun { background: url('../img/summeroffun.jpg') center/cover; }
+#grape { background: url('../img/grape.jpg') center/cover; }
+#mango { background: url('../img/mango.jpg') center/cover; }
+
+article.col25  {
+    padding: 30px 10px
+}
+article.col25 i {
+    font-size: 1.5em;
+}
+article.col25 p {
+    font: .9em/1.5 'Proxima Nova';
+    padding: 13px 0;
+}
+
+#footer1 {
+    height: 100vh;
+    background: url('../img/footerbg.jpg') 56% 50% /cover;
+    text-align: center;
+    position: relative;
+}
+#footer2 {
+    background-color: #0c1119;
+}
+#footer1 h1 {
+    font: 1.8em "Open Sans";
+    color: #fff;
+    padding-bottom: 20px;
+}
+#footer1 p {
+    font: 1em "Open Sans";
+    color: #fff;
+    max-width: 480px;
+    margin: auto;
+    padding: 0 2px;
+}
+.ft1 {
+    position: absolute;
+    top: 29.8%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 100%;
+}
+#footer2 h5 {
+    font: .9em "Open Sans";
+    color: #fff;
+    text-align: initial;
+    padding: 0 0 20px 0 ;
+    text-transform: capitalize;
+}
+#footer2 p {
+    font: .87em "Open Sans";
+    line-height: 1.5em;
+    color: #8297a7;
+    padding-bottom: 5px;
+}
+.ft2 {
+    padding: 70px 7px 0 7px;
+}
+#icons {
+    display: flex;
+}
+#icons a {
+    font-size: 2em;
+    color: #AAA;
+    letter-spacing: 7px;
+}
+.fa-square-facebook:hover { color: darkblue!important }
+.fa-square-x-twitter:hover { color: black!important }
+.fa-square-youtube:hover { color: red!important }
+.fa-linkedin:hover { color: #367e96!important }
+.join {
+    display: flex;
+    flex-direction: column;
+    padding: 27px 10px 50px 10px;
+}
+input {
+    padding: 3px;
+    margin-bottom: 5px;
+    outline: none;
+}
+#sub {
+    color: #fff;
+    background: var(--yasil);
+    border: none;
+    border-radius: 2px;
+}
+@media only screen and (min-width: 768px) {
+    header { text-align: initial;}
+    #menu { float: right }
+    #menu li { display: inline-block; padding: 20px 1.87vw; }
+    #title {left: 115px; width: initial;}
+    h1 { font-size: 2.5em }
+    h2 { font-size: 2.2em }
+    h5 { text-align: right; padding: 0 25px}
+    .container { max-width: 1180px; margin: auto; }
+    .row { display: table; content: ''; clear: both }
+    .fleft { float: left }
+    .fright { float: right }
+    .col25 { width: 25% }
+    .col33 { width: 33.33% }
+    .col66 { width: 66.66% }
+    .artpadd { padding: 50px 40px }
+    #footer1 h1 { font: 2.8em "Open Sans";}
+    .ft2 {
+        display: flex;
+        padding: 70px 0 0 0; 
+    }
+    #footer2 p {
+        padding: 0 48px 0 0;
+    }
+    .join {
+        flex-direction: row;
+        justify-content: end;
+        padding-bottom: 70px;
+    }
+    #icons a {
+        font-size: 2.5em;
+    }
+    input {
+        padding: 15px 0 15px 23px;
+    }
+    #sub {
+        padding-right: 23px;
+    }
+}
